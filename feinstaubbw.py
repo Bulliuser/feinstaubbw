@@ -6,7 +6,7 @@
 
 import pandas as pd
 import datetime as dt
-
+import os
 
 # In[134]:
 
@@ -91,6 +91,7 @@ df['feinstaubbelastung'].rolling(30).mean()
 
 
 # In[152]:
+os.remove('feinstaubbiberach.csv')
 
 
 df.to_csv('feinstaubbiberach.csv')
