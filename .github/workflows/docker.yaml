@@ -41,4 +41,4 @@ jobs:
         git config --global user.email 'r.schoeffmann@schwaebische.de'
         git add -A
         git commit -am "Automated report"
-        git push origin main --force
+        git push -f origin main HEAD
