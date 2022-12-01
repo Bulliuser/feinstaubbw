@@ -91,7 +91,6 @@ df['feinstaubbelastung'].rolling(30).mean()
 
 
 # In[152]:
-os.remove('feinstaubbiberach.csv')
 
 
 df.to_csv('feinstaubbiberach.csv')
