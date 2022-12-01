@@ -87,16 +87,10 @@ df
 df.index=df['datum']
 
 
-# In[93]:
+# In[99]:
 
 
-df.resample(rule="3h").sum().plot.line() 
-
-
-# In[95]:
-
-
-df.rolling(30).mean().plot.line()
+df.rolling(30).mean()
 
 
 # In[88]:
