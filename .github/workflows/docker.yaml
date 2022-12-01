@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --global user.name 'Bulliuser'
         git config --global user.email 'r.schoeffmann@schwaebische.de'
-        git rm --cached 'feinstaubbiberach.csv'
+        git rm -r --cached .csv
         git add -A
         git commit -am "Automated report"
         git push -u origin main HEAD -f
